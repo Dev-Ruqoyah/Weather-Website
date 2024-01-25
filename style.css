@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.image{
+    height: 50px;
+    width: 50px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.main{
+   height: 90vh;
+   display: grid;
+   place-content:center;
+   place-items: center;
+   /* background-image: url(https://img.freepik.com/free-photo/new-york-city_649448-1646.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais); */
+   background: url(https://img.freepik.com/free-photo/modern-city-sky-full-dark-clouds_181624-16789.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais);
+   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+.main h1{
+    font-size: 50px;
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #2e23c4;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+.butt{
+    height: 40px;
+    width: 200px;
+}
+.butt img{
+    height: 40px;
+    width: 90px;
+    object-fit: cover;
+}
+
+.box{
+    height: 80px;
+    width: 300px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    /* margin: auto 0 !important; */
+}
+.box1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.box1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+/* section about */
+.about{
+    /* height: 100vh; */
+    background: #eee;
+}
+.about h2{
+    font-size: 45px !important;
+}
+
+/* section sevices */

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+  <style>
+    main{
+        height: 90vh;
+        background: #eee;
+    }
+    .image{
+    height: 50px;
+    width: 50px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+   
+    .temperature{
+        height: 180px;
+        width: 1200px;
+    }
+    .image img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    .box{
+      height: 100px;
+      width: 330px;
+    }
+
+
+
+    @media (max-width:767px) {
+        .wet{
+            margin-top: 10px;
+        }
+    }
+
+  </style>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div class="image">
+              <img src="./image/aircast-high-resolution-logo-black-transparent.png" alt="">
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  fs-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="currentweather.html">Current Weather</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#">Maps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#">About Us</a>
+              </li>
+    
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+               <button class="py-2 border rounded-3  px-4" type="submit">Signup</button>
+           
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <main class="p-2">
+        <div class="container2 bg-primary pb-4">
+            <div class="head d-flex justify-content-between pt-2 px-3 fs-4 text-light mb-1">
+                <p>Current Weather</p>
+                <div class="time d-flex bg-light text-dark text-center  px-2 border rounded-3 fs-5  ">
+                    <p class="hours">12:</p>
+                    <p class="minutes">12:</p>
+                    <p class="seconds">12</p>
+                    
+                </div>
+            </div>
+
+            <div class="selectoption text-center">
+                <label class="fs-5 text-light" for="country">Select Country:</label>
+                <select
+                  id="country"
+                  class="w-50 py-2 border rounded-3"
+                  onchange = "displaySelectedValue()"
+                 
+                >
+                  <!-- Populate with countries dynamically if needed -->
+                  <option value="USA">United States</option>
+                  <option value="CAN">Canada</option>
+                  <option value="BRA">Brazil</option>
+                  <option value="FRA">France</option>
+                  <option value="JPN">Japan</option>
+                  <option value="AUS">Australia</option>
+                  <option value="ZAF">South Africa</option>
+                  <option value="IND">India</option>
+                  <option value="RUS">Russia</option>
+                  <option value="MEX">Mexico</option>
+                  <option value="ARG">Argentina</option>
+                  <option value="CHN">China</option>
+                  <option value="DEU">Germany</option>
+                  <option value="GBR">United Kingdom</option>
+                  <option value="EGY">Egypt</option>
+                  <option value="NGA">Nigeria</option>
+                  <option value="KOR">South Korea</option>
+                  <option value="SAU">Saudi Arabia</option>
+                  <option value="ITA">Italy</option>
+                  <option value="SWE">Sweden</option>
+        
+                  <!-- Add more options as needed -->
+                </select>
+        
+                <button
+                  class="btn btn-dark wet"
+                  onclick="getWeather('c9df3198ae6e8d080c0ea20c29e35a1c', document.getElementById('country').value)"
+                 
+                >
+                  Get Weather
+                </button>
+             
+            </div>
+            <div class="temperature m-auto  d-flex align-items-center my-2 w-75  bg-light ">
+              <div class="image h-75 w-25 ps-2 ">
+                <img src="image/cartoon-colorful-summer-sun-icon-vector-hand-drawn-illustration-isolated-transparent-background_20412-786-removebg-preview.png" alt="">
+              </div>
+              <div class="temperature-content">
+                <h1 class="temp ">33.3°C</h1>
+                <h3 class="country">Nigeria</h3>
+              </div>
+            </div>
+            <div class="other-weather d-flex flex-wrap gap-1 w-75 m-auto mb-3">
+              <div class="box bg-light p-2">
+                <h5>Humidity</h5>
+                <h4 class="humi">17</h4>
+              </div>
+              <div class="box bg-light p-2">
+                <h5 >Visibility</h5>
+                <h4 class="visi">10000</h4>
+              </div>
+              <div class="box bg-light p-2">
+                <h5>Pressure</h5>
+                <h4 class="pres">1000</h4>
+              </div>
+              <div class="box bg-light p-2">
+                <h5>Wind Speed</h5>
+                <h4 class="windspeed">2.42</h4>
+              </div>
+              <div class="box bg-light p-2">
+                <h5>Wind Deg</h5>
+                <h4 class="windeg">118</h4>
+              </div>
+              <div class="box bg-light p-2">
+                <h5>Wind Gust</h5>
+                <h4 class="windgust">2.3</h4>
+              </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="currentweather.js"></script>
+  </body>
+</html>
