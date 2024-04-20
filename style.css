@@ -21,7 +21,7 @@
    place-content:center;
    place-items: center;
    /* background-image: url(https://img.freepik.com/free-photo/new-york-city_649448-1646.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais); */
-   background: url(https://img.freepik.com/free-photo/modern-city-sky-full-dark-clouds_181624-16789.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais);
+   background:url(https://img.freepik.com/free-photo/modern-city-sky-full-dark-clouds_181624-16789.jpg?t=st=1713580581~exp=1713584181~hmac=af1895d69b87601c590cdd851d205d6347c63e69531601c4e634d0b2e9631e3d&w=4740);
    
    background-position: center;
    background-repeat: no-repeat;
@@ -101,3 +101,155 @@ button {
 }
 
 /* section sevices */
+.daily {
+    height: 300px !important;
+    /* width: 300px; */
+    border: 1px solid #000;
+    background-image: url(https://img.freepik.com/free-photo/skyscrapers-from-cityscape-sunny-day_23-2148184222.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dail {
+    height: 300px !important;
+    /* width: 300px; */
+    border: 1px solid #000;
+    background-image: url(https://img.freepik.com/premium-photo/solar-panels-roof-big-building-city-natural-resource-energy-generative-ai_58409-29322.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .days,
+  .get {
+    /* From https://css.glass */
+    background: rgba(189, 186, 186, 0.77);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(189, 186, 186, 0.3);
+  }
+
+  .app {
+    height: 200px !important;
+    background-image: url(https://img.freepik.com/premium-photo/man-holding-his-smartphone_78895-955.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: -30px !important;
+  }
+
+  .location {
+    height: 200px !important;
+    background-image: url(https://img.freepik.com/free-photo/young-adult-cycling-work-city_23-2149488818.jpg?size=626&ext=jpg&ga=GA1.1.1825975590.1687413097&semt=ais);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .sharing {
+    /* height: 150px !important; */
+    margin-top: 40px !important;
+    background-image: url(./image/white-cloud-blue-sky_74190-2381.avif);
+  }
+
+  .services {
+    /* height: 100vh; */
+    /* width: 10; */
+    background: #eee;
+  }
+
+
+
+  .accurate {
+    background: #eee;
+  }
+
+  .wonderer {
+    background: linear-gradient(300deg, #fff, blue);
+    border-radius: 20% !important;
+  }
+
+  .imade {
+    height: 390px;
+    width: 300px;
+    background: #000;
+    border-radius: 20% !important;
+  }
+
+  .imade img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+
+  .space p {
+    /* From https://css.glass */
+    background: rgba(189, 186, 186, 0.77);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(189, 186, 186, 0.3);
+  }
+
+  .application {
+    /* height: 100vh; */
+    background: #eee;
+  }
+
+  .application2 {
+    height: 500px;
+  }
+
+  .application2 {
+    border-radius: 40%;
+  }
+
+  .application2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40%;
+  }
+
+  /* SECTIION PICTURES */
+  .picture {
+    /* height: 100vh; */
+    background: #eee;
+  }
+
+  .picture .col-lg-6 {
+    height: 360px;
+    width: 480px;
+  }
+
+  .picture .col-lg-6 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    object-fit: cover;
+  }
+
+  footer {
+    background: #eee;
+  }
+
+  footer input {
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid black;
+    width: 290px;
+    background: transparent;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+  }
+
+  /* .input {} */
+
+  /* .box{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000;
+} */
